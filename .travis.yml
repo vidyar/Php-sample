@@ -6,7 +6,7 @@ php:
 script:
   - phpunit calculator_test.php --with-junit --junit-file=shippable/testresults/phpunit.xml
   - --coverage-clover calculator_test.php
-  - - coverage xml -o shippable/codecoverage/coverage.xml calculator_test.php		
+  - coverage xml -o shippable/codecoverage/coverage.xml calculator_test.php		
 
 
 
