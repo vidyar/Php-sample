@@ -2,7 +2,9 @@ language: php
 
 php: 
   - 5.3
-before_script: mkdir -p shippable/codecoverage
+before_script: 
+  - mkdir -p shippable/codecoverage
+  - mkdir -p shippable/testresults
 script:
   - phpunit calculator_test.php --with-junit --junit-file=shippable/testresults/phpunit.xml
   
