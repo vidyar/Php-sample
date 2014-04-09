@@ -9,7 +9,7 @@ before_script:
 script:
   - phpunit calculator_test.php --log-junit --junit-file=shippable/testresults/phpunit.xml
   
-  - phpunit calculator_test.php --coverage-xml -o shippable/codecoverage/coverage.xml calculator_test.php
+  - phpunit calculator_test.php --coverage-xml  calculator_test.php
   
 notifications:
    email: false
