@@ -6,9 +6,8 @@ before_script:
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
 script:
-  - phpunit calculator_test.php --with-junit --junit-file=shippable/testresults/phpunit.xml
-  - coverage run --branch calculator_test.php
-  - coverage xml -o shippable/codecoverage/coverage.xml calculator_test.php
+  - phpunit calculator_test.php --log-junit --junit-file=shippable/testresults/phpunit.xml
+  - 
   
 notifications:
    email: false
