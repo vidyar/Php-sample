@@ -8,8 +8,9 @@ before_script:
 
 script:
   - phpunit calculator_test.php --log-junit log.junit.xml
+  - phpunit --coverage-html assets/coverage-report
   
-  - phpunit calculator_test.php --coverage-xml  calculator_test.php
+ # - phpunit calculator_test.php --coverage-xml  calculator_test.php
   
 notifications:
    email: false
